@@ -1,0 +1,43 @@
+{
+    "name": "@unsass/rem",
+    "version": "0.0.0",
+    "description": "Easily manage your rem conversion.",
+    "scripts": {
+        "prepare": "husky install"
+    },
+    "engines": {
+        "node": ">=14.0.0",
+        "npm": ">=8.0.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^16.2.1",
+        "@commitlint/config-conventional": "^16.2.1",
+        "@types/node": "^17.0.21",
+        "husky": "^7.0.4"
+    },
+    "dependencies": {
+        "sass": "^1.49.9"
+    },
+    "keywords": [
+        "rem",
+        "unsass",
+        "sass",
+        "css",
+        "front-end"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/unsass/rem#readme",
+    "bugs": {
+        "url": "https://github.com/unsass/rem/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/unsass/rem.git"
+    },
+    "files": [
+        "*.scss"
+    ],
+    "publishConfig": {
+        "access": "public"
+    }
+}
