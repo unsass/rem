@@ -5,12 +5,12 @@
 @use "true" as *;
 @use "../index" as rem;
 
-@include describe("rem.convert()") {
+@include describe("rem.declaration()") {
     @include it("Should return single value declaration.") {
         @include assert {
             @include output {
                 .foo {
-                    font-size: rem.convert(16px);
+                    @include rem.declaration(font-size, 16px);
                 }
             }
 
@@ -26,7 +26,7 @@
         @include assert {
             @include output {
                 .foo {
-                    margin: rem.convert(20px 30px);
+                    @include rem.declaration(margin, 20px 30px);
                 }
             }
 
@@ -42,7 +42,7 @@
         @include assert {
             @include output {
                 .foo {
-                    border: rem.convert(1px solid darkcyan);
+                    @include rem.declaration(border, 1px solid darkcyan);
                 }
             }
 
@@ -58,7 +58,7 @@
         @include assert {
             @include output {
                 .foo {
-                    box-shadow: rem.convert(0 0 10px 5px rgba(darkcyan, 0.75), inset 0 0 10px 5px rgba(darkcyan, 0.75));
+                    @include rem.declaration(box-shadow, (0 0 10px 5px rgba(darkcyan, 0.75), inset 0 0 10px 5px rgba(darkcyan, 0.75)));
                 }
             }
 
@@ -76,7 +76,7 @@
         @include assert {
             @include output {
                 .foo {
-                    font-size: rem.baseline();
+                    @include rem.baseline;
                 }
             }
 
@@ -94,7 +94,7 @@
                 @include rem.config(10px);
 
                 .foo {
-                    font-size: rem.baseline();
+                    @include rem.baseline;
                 }
             }
 
