@@ -71,7 +71,6 @@ The following Sass will configure new parameters:
 | Function                | Description                                                    |
 |-------------------------|----------------------------------------------------------------|
 | `convert($values...)`   | Convert `px` unit to `rem`.                                    |
-| `baseline($percentage)` | Sets root baseline value with default `$percentage` at `100%`. |
 
 #### Convert with `rem.convert()`
 
@@ -125,8 +124,8 @@ body {
 
 | Mixin                                        | Description                                                                         |
 |----------------------------------------------|-------------------------------------------------------------------------------------|
+| `baseline($important)`                       | Sets declaration with `font-size` property, with optional `!important`.             |
 | `declaration($property, $value, $important)` | Sets declaration with conversion of `px` unit to `rem`, with optional `!important`. |
-| `baseline`                                   | Sets declaration with `font-size` property.                                         |
 
 #### Convert declaration with `rem.declaration()`
 

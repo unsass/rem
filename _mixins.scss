@@ -72,8 +72,8 @@
 /// @see {mixin} css.declaration
 /// @see {function} functions.baseline
 ///
-@mixin baseline {
-    @include css.declaration(font-size, functions.baseline());
+@mixin baseline($important: false) {
+    @include css.declaration(font-size, functions.baseline(), $important);
 }
 
 ///
