@@ -88,6 +88,22 @@
         }
     }
 
+    @include it("Should return default declaration with '!important'.") {
+        @include assert {
+            @include output {
+                .foo {
+                    @include rem.baseline(true);
+                }
+            }
+
+            @include expect {
+                .foo {
+                    font-size: 100% !important;
+                }
+            }
+        }
+    }
+
     @include it("Should return custom percentage declaration.") {
         @include assert {
             @include output {
