@@ -68,9 +68,9 @@ The following Sass will configure new parameters:
 
 ### Sass functions
 
-| Function                | Description                                                    |
-|-------------------------|----------------------------------------------------------------|
-| `convert($values...)`   | Convert `px` unit to `rem`.                                    |
+| Function              | Description                 |
+|-----------------------|-----------------------------|
+| `convert($values...)` | Convert `px` unit to `rem`. |
 
 #### Convert with `rem.convert()`
 
