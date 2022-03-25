@@ -98,28 +98,6 @@ The following Sass...
 }
 ```
 
-#### Baseline with `rem.baseline()`
-
-The following Sass...
-
-```scss
-@use "@unsass/rem";
-
-html,
-body {
-    font-size: rem.baseline();
-}
-```
-
-...will produce the following CSS...
-
-```css
-html,
-body {
-    font-size: 100%
-}
-```
-
 ### Sass mixins
 
 | Mixin                                        | Description                                                                         |
