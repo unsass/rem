@@ -9,13 +9,13 @@
     @include it("Should return single value declaration.") {
         @include assert {
             @include output {
-                .foo {
+                .test {
                     font-size: rem.convert(16px);
                 }
             }
 
             @include expect {
-                .foo {
+                .test {
                     font-size: 1rem;
                 }
             }
@@ -25,13 +25,13 @@
     @include it("Should return multiple values declaration.") {
         @include assert {
             @include output {
-                .foo {
+                .test {
                     margin: rem.convert(20px 30px);
                 }
             }
 
             @include expect {
-                .foo {
+                .test {
                     margin: 1.25rem 1.875rem;
                 }
             }
@@ -41,13 +41,13 @@
     @include it("Should return multiple mixed values declaration.") {
         @include assert {
             @include output {
-                .foo {
+                .test {
                     border: rem.convert(1px solid darkcyan);
                 }
             }
 
             @include expect {
-                .foo {
+                .test {
                     border: 0.0625rem solid darkcyan;
                 }
             }
@@ -57,13 +57,13 @@
     @include it("Should return comma-separated values declaration.") {
         @include assert {
             @include output {
-                .foo {
+                .test {
                     box-shadow: rem.convert(0 0 10px 5px rgba(darkcyan, 0.75), inset 0 0 10px 5px rgba(darkcyan, 0.75));
                 }
             }
 
             @include expect {
-                .foo {
+                .test {
                     box-shadow: 0 0 0.625rem 0.3125rem rgba(0, 139, 139, 0.75), inset 0 0 0.625rem 0.3125rem rgba(0, 139, 139, 0.75);
                 }
             }
