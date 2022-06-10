@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/unsass/rem/compare/v1.1.0...v2.0.0) (2022-06-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* move main files on `src` folder
+* **deps:** bump to `@unsass/css` 2.0.2
+
+* **deps:** bump to `@unsass/css` 2.0.2 ([5f4ca0a](https://github.com/unsass/rem/commit/5f4ca0ae098e118ba602d8c07c8da0e5d96a8b79))
+
+
+### Code Refactoring
+
+* move main files on `src` folder ([8820fc9](https://github.com/unsass/rem/commit/8820fc91560f990f703cbc58d153ba12d7d6eee1))
+
 ## [1.1.0](https://github.com/unsass/rem/compare/v1.0.0...v1.1.0) (2022-03-02)
 
 
