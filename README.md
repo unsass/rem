@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Sass functions and mixins to use em units.
+Sass functions and mixins to use rem units.
 
 ## Installing
 
