@@ -1,6 +1,6 @@
 {
     "name": "@unsass/rem",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Sass functions and mixins to use em units.",
     "scripts": {
         "lint:css": "stylelint --fix \"**/*.scss\"",

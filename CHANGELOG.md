@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/unsass/rem/compare/v2.0.1...v2.0.2) (2022-08-17)
+
+
+### Bug Fixes
+
+* no user-visible changes ([1b10556](https://github.com/unsass/rem/commit/1b10556570c6554c1bd16037f5ced99dafc55997))
+
 ## [2.0.1](https://github.com/unsass/rem/compare/v2.0.0...v2.0.1) (2022-07-22)
 
 
