@@ -6,10 +6,7 @@
 
 ## Introduction
 
-Easily manage your rem conversion.
-
-> **Note:** this is new code moved
-> from [`@sass-collective/rem`](https://github.com/sass-collective/sass-collective/tree/master/packages/rem) repository.
+Sass functions and mixins to use em units.
 
 ## Installing
 
