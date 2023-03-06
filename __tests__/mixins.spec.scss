@@ -1,0 +1,126 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as rem;
+
+@include describe("mixins") {
+    @include describe("declaration()") {
+        @include it("Should return single value declaration.") {
+            @include assert {
+                @include output {
+                    .test {
+                        @include rem.declaration(font-size, 16px);
+                    }
+                }
+
+                @include expect {
+                    .test {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        @include it("Should return multiple values declaration.") {
+            @include assert {
+                @include output {
+                    .test {
+                        @include rem.declaration(margin, 20px 30px);
+                    }
+                }
+
+                @include expect {
+                    .test {
+                        margin: 1.25rem 1.875rem;
+                    }
+                }
+            }
+        }
+
+        @include it("Should return multiple mixed values declaration.") {
+            @include assert {
+                @include output {
+                    .test {
+                        @include rem.declaration(border, 1px solid darkcyan);
+                    }
+                }
+
+                @include expect {
+                    .test {
+                        border: 0.0625rem solid darkcyan;
+                    }
+                }
+            }
+        }
+
+        @include it("Should return comma-separated values declaration.") {
+            @include assert {
+                @include output {
+                    .test {
+                        @include rem.declaration(box-shadow, (0 0 10px 5px rgba(darkcyan, 0.75), inset 0 0 10px 5px rgba(darkcyan, 0.75)));
+                    }
+                }
+
+                @include expect {
+                    .test {
+                        box-shadow: 0 0 0.625rem 0.3125rem rgba(0, 139, 139, 0.75), inset 0 0 0.625rem 0.3125rem rgba(0, 139, 139, 0.75);
+                    }
+                }
+            }
+        }
+    }
+
+    @include describe("baseline()") {
+        @include it("Should return default declaration.") {
+            @include assert {
+                @include output {
+                    .test {
+                        @include rem.baseline;
+                    }
+                }
+
+                @include expect {
+                    .test {
+                        font-size: 100%;
+                    }
+                }
+            }
+        }
+
+        @include it("Should return default declaration with '!important'.") {
+            @include assert {
+                @include output {
+                    .test {
+                        @include rem.baseline(true);
+                    }
+                }
+
+                @include expect {
+                    .test {
+                        font-size: 100% !important;
+                    }
+                }
+            }
+        }
+
+        @include it("Should return custom percentage declaration.") {
+            @include assert {
+                @include output {
+                    @include rem.config(10px);
+
+                    .test {
+                        @include rem.baseline;
+                    }
+                }
+
+                @include expect {
+                    .test {
+                        font-size: 62.5%;
+                    }
+                }
+            }
+        }
+    }
+}

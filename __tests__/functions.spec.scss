@@ -1,0 +1,74 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as rem;
+
+@include describe("functions") {
+    @include describe("convert()") {
+        @include it("Should return single value declaration.") {
+            @include assert {
+                @include output {
+                    .test {
+                        font-size: rem.convert(16px);
+                    }
+                }
+
+                @include expect {
+                    .test {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        @include it("Should return multiple values declaration.") {
+            @include assert {
+                @include output {
+                    .test {
+                        margin: rem.convert(20px 30px);
+                    }
+                }
+
+                @include expect {
+                    .test {
+                        margin: 1.25rem 1.875rem;
+                    }
+                }
+            }
+        }
+
+        @include it("Should return multiple mixed values declaration.") {
+            @include assert {
+                @include output {
+                    .test {
+                        border: rem.convert(1px solid darkcyan);
+                    }
+                }
+
+                @include expect {
+                    .test {
+                        border: 0.0625rem solid darkcyan;
+                    }
+                }
+            }
+        }
+
+        @include it("Should return comma-separated values declaration.") {
+            @include assert {
+                @include output {
+                    .test {
+                        box-shadow: rem.convert(0 0 10px 5px rgba(darkcyan, 0.75), inset 0 0 10px 5px rgba(darkcyan, 0.75));
+                    }
+                }
+
+                @include expect {
+                    .test {
+                        box-shadow: 0 0 0.625rem 0.3125rem rgba(0, 139, 139, 0.75), inset 0 0 0.625rem 0.3125rem rgba(0, 139, 139, 0.75);
+                    }
+                }
+            }
+        }
+    }
+}
