@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/unsass/rem/compare/v2.0.4...v2.1.0) (2023-03-06)
+
+
+### Features
+
+* **deps:** bump to `sass` 1.58.3 ([ce0a8d5](https://github.com/unsass/rem/commit/ce0a8d5187d1887b52de471ce4970e328176f987))
+
+
+### Bug Fixes
+
+* **deps:** dependencies vulnerabilities ([d22e911](https://github.com/unsass/rem/commit/d22e911e89f6243d524e55c01dd565e58ffab24b))
+
+
+### Build System
+
+* **deps:** bump  to `@unsass/css` 2.1.0 ([1ba3d77](https://github.com/unsass/rem/commit/1ba3d77f4902761cf175b1c0d9fd31fdc8c3758b))
+
 ## [2.0.4](https://github.com/unsass/rem/compare/v2.0.3...v2.0.4) (2022-08-17)
 
 
