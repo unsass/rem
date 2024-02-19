@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.0](https://github.com/unsass/rem/compare/v2.1.0...v2.2.0) (2024-02-19)
+
+
+### Features
+
+* **deps:** drop node 16 for 18 ([b25887e](https://github.com/unsass/rem/commit/b25887e0f7d01dc4c60663940848ccb1fa9714a6))
+
+
+### Bug Fixes
+
+* **deps:** prevent dependencies vulnerabilities ([f742269](https://github.com/unsass/rem/commit/f7422698e0917b03410a610263e5247cf0e6bc9a))
+
 ## [2.1.0](https://github.com/unsass/rem/compare/v2.0.4...v2.1.0) (2023-03-06)
 
 
