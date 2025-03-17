@@ -2,6 +2,7 @@
     "name": "@unsass/rem",
     "version": "2.2.0",
     "description": "Sass functions and mixins to use rem units.",
+    "type": "module",
     "scripts": {
         "lint:css": "stylelint --fix \"**/*.scss\"",
         "lint": "npm-run-all --parallel lint:*",
@@ -10,7 +11,7 @@
         "release": "semantic-release"
     },
     "engines": {
-        "node": ">=18.0.0"
+        "node": ">=18"
     },
     "sass": "index.scss",
     "devDependencies": {
