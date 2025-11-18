@@ -5,7 +5,9 @@
 @use "sass:list";
 @use "sass:math";
 @use "sass:meta";
+@use "sass:string";
 @use "@sass-collective/strip-unit";
+@use "@unsass/css/custom-properties";
 @use "./variables";
 
 ///
@@ -67,6 +69,16 @@
             $result: list.append($result, math.div($value, $baseline) * 1rem);
         } @else if meta.type-of($value) == "list" {
             $result: list.append($result, convert($value...), $separator);
+        } @else if meta.type-of($value) == "string" and string.index($value, "var(") {
+            @debug $value;
+            @debug string.index($value, "(");
+            @debug string.index($value, ")");
+            @debug string.slice($value, string.index($value, "(") + 1, string.index($value, ")") - 1);
+            @debug meta.type-of(string.slice($value, string.index($value, "(") + 1, string.index($value, ")") - 1));
+
+            $test: string.slice($value, string.index($value, "(") + 1, string.index($value, ")") - 1);
+
+            $result: list.append($result, convert($test...), $separator);
         } @else {
             $result: list.append($result, $value);
         }

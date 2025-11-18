@@ -70,5 +70,21 @@
                 }
             }
         }
+
+        @include it("Should return custom property declaration.") {
+            @include assert {
+                @include output {
+                    .test {
+                        font-size: rem.convert(var(--font-size, 16px));
+                    }
+                }
+
+                @include expect {
+                    .test {
+                        font-size: var(--font-size, 1rem);
+                    }
+                }
+            }
+        }
     }
 }
