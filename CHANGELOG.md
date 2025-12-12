@@ -2,15 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## 2.3.0 (2025-03-17)
+## [2.3.0](https://github.com/unsass/rem/compare/v2.2.0...v2.3.0) (2025-03-17)
 
-* chore: switch to ESM ([19575d3](https://github.com/unsass/rem/commit/19575d3))
-* chore(deps): bump to `husky` 9.1.7 ([bbe1346](https://github.com/unsass/rem/commit/bbe1346))
-* chore(deps): bump to `sass-true` 8.1.0 ([52fb63e](https://github.com/unsass/rem/commit/52fb63e))
-* chore(deps): clean `package-lock.json` ([023c636](https://github.com/unsass/rem/commit/023c636))
-* chore(deps): prevent dependencies vulnerabilities ([f20b133](https://github.com/unsass/rem/commit/f20b133))
-* test(deps): switch from jest to vitest ([2a7fcc4](https://github.com/unsass/rem/commit/2a7fcc4))
-* ci: rename `node.js.yml` to `publish.yml` ([468a3a0](https://github.com/unsass/rem/commit/468a3a0))
+
+### Features
+
 * feat(deps): bump to `@unsass/css` 3.0.0 ([50c1908](https://github.com/unsass/rem/commit/50c1908))
 
 ## [2.2.0](https://github.com/unsass/rem/compare/v2.1.0...v2.2.0) (2024-02-19)
