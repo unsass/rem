@@ -2,35 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## 2.4.0 (2026-01-04)
+## [2.4.0](https://github.com/unsass/rem/compare/v2.3.0...v2.4.0) (2026-01-04)
 
-* ci: update `release.config.js` ([60c7c27](https://github.com/unsass/rem/commit/60c7c27))
-* ci: update `release.config.js` ([af28def](https://github.com/unsass/rem/commit/af28def))
-* chore(deps-dev): bump to `@commitlint/cli` 20.3.0 ([84c6c89](https://github.com/unsass/rem/commit/84c6c89))
-* chore(deps-dev): bump to `sass-true` 10.1.0 ([52f911b](https://github.com/unsass/rem/commit/52f911b))
-* chore(deps-dev): bump to `stylelint` 16.26.1 ([2c83dde](https://github.com/unsass/rem/commit/2c83dde))
+
+### Dependencies
+
 * chore(deps): bump to `@unsass/css` 3.1.0 ([c598be6](https://github.com/unsass/rem/commit/c598be6))
 * chore(deps): bump to `sass` 1.97.1 ([70c09f9](https://github.com/unsass/rem/commit/70c09f9))
 
-## <small>2.3.1 (2025-12-12)</small>
+## [2.3.1](https://github.com/unsass/rem/compare/v2.3.0...v2.3.1) (2025-12-12)
 
-* chore: prevent dependencies vulnerabilities ([470cf27](https://github.com/unsass/rem/commit/470cf27))
-* chore: prevent dependencies vulnerabilities ([a0c73fc](https://github.com/unsass/rem/commit/a0c73fc))
-* chore: update `CHANGELOG.md` ([7c8024c](https://github.com/unsass/rem/commit/7c8024c))
-* chore(deps-dev): bump to `@commitlint/cli` 20.1.0 ([df55b9c](https://github.com/unsass/rem/commit/df55b9c))
-* chore(deps-dev): bump to `@commitlint/cli` 20.2.0 ([20ecaad](https://github.com/unsass/rem/commit/20ecaad))
-* chore(deps-dev): bump to `sass-true` 10.0.1 ([e152f97](https://github.com/unsass/rem/commit/e152f97))
-* chore(deps-dev): bump to `sass-true` 9.0.0 ([2be7f1d](https://github.com/unsass/rem/commit/2be7f1d))
-* chore(deps-dev): bump to `semantic-release` 25.0.2 ([5aa30cf](https://github.com/unsass/rem/commit/5aa30cf))
-* chore(deps-dev): bump to `stylelint-config-unsass` 2.0.0 ([f4a77d4](https://github.com/unsass/rem/commit/f4a77d4))
-* chore(deps-dev): bump to `stylelint-config-unsass` 2.2.0 ([3abac33](https://github.com/unsass/rem/commit/3abac33))
-* chore(deps-dev): bump to `vitest` 3.2.3 ([8520e51](https://github.com/unsass/rem/commit/8520e51))
-* chore(deps-dev): prevent dependencies vulnerabilities ([47917c2](https://github.com/unsass/rem/commit/47917c2))
+
+### Dependencies
+
 * chore(deps): bump to `@unsass/css` 3.0.1 ([e85880a](https://github.com/unsass/rem/commit/e85880a))
 * chore(deps): bump to `sass` 1.96.0 ([ca65573](https://github.com/unsass/rem/commit/ca65573))
-* ci: update `release.config.js` ([8595b90](https://github.com/unsass/rem/commit/8595b90))
-* ci: update `vitest.config.ts` ([88c9f73](https://github.com/unsass/rem/commit/88c9f73))
-* ci(release): replace `.releaserc.json` for `release.config.js` ([1131415](https://github.com/unsass/rem/commit/1131415))
 
 ## [2.3.0](https://github.com/unsass/rem/compare/v2.2.0...v2.3.0) (2025-03-17)
 
