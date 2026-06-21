@@ -39,8 +39,10 @@
     },
     "keywords": [
         "sass",
+        "scss",
         "rem",
         "convert",
+        "mixins",
         "unsass",
         "front-end"
     ],
