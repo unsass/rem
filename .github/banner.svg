@@ -24,11 +24,11 @@
         <rect width="800" height="360" fill="url(#dots)"/>
         <rect width="800" height="2.5" fill="url(#bar)" opacity="0.95"/>
 
-        <!-- relative-size icon: two "A" glyphs sharing a baseline -->
-        <g transform="translate(400, 46)" fill="none" stroke="#1ad1cb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M-19 16 L-10.5 -16 L-2 16 M-15 4 L-6 4"/>
-            <path d="M6 16 L12 -2 L18 16 M8.6 9 L15.4 9" opacity="0.85"/>
-            <line x1="-20" y1="16" x2="19" y2="16" opacity="0.4"/>
+        <!-- scalable-unit icon: expand arrows within a frame -->
+        <g transform="translate(400, 46)" fill="none" stroke="#1ad1cb" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="-17" y="-17" width="34" height="34" rx="5" opacity="0.5"/>
+            <path d="M-3 -3 L-12 -12 M-12 -12 L-12 -6 M-12 -12 L-6 -12"/>
+            <path d="M3 3 L12 12 M12 12 L12 6 M12 12 L6 12"/>
         </g>
 
         <!-- wordmark -->
