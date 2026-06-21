@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" style="display:block">
+    <defs>
+        <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+            <circle cx="0.8" cy="0.8" r="0.7" fill="#fff" opacity="0.04"/>
+        </pattern>
+        <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#0b5d58"/>
+            <stop offset="0.5" stop-color="#129b95"/>
+            <stop offset="1" stop-color="#1ad1cb"/>
+        </linearGradient>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0b5d58"/>
+            <stop offset="0.5" stop-color="#129b95"/>
+            <stop offset="1" stop-color="#1ad1cb"/>
+        </linearGradient>
+        <clipPath id="frame">
+            <rect width="800" height="360" rx="12"/>
+        </clipPath>
+    </defs>
+
+    <!-- everything is clipped to the rounded frame so corners and the top bar follow the radius -->
+    <g clip-path="url(#frame)">
+        <rect width="800" height="360" fill="#101a24"/>
+        <rect width="800" height="360" fill="url(#dots)"/>
+        <rect width="800" height="2.5" fill="url(#bar)" opacity="0.95"/>
+
+        <!-- relative-size icon: two "A" glyphs sharing a baseline -->
+        <g transform="translate(400, 46)" fill="none" stroke="#1ad1cb" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M-19 16 L-10.5 -16 L-2 16 M-15 4 L-6 4"/>
+            <path d="M6 16 L12 -2 L18 16 M8.6 9 L15.4 9" opacity="0.85"/>
+            <line x1="-20" y1="16" x2="19" y2="16" opacity="0.4"/>
+        </g>
+
+        <!-- wordmark -->
+        <!-- "rem" wordmark, outlined in Montserrat SemiBold -->
+        <path fill="#eeeeee"
+              d="M377.99 105L374.86 105L374.86 91.65L377.84 91.65L377.84 93.60Q379.21 91.50 382.59 91.50L382.59 94.47Q382.39 94.45 382.21 94.42Q382.04 94.40 381.86 94.40Q380.09 94.40 379.04 95.44Q377.99 96.47 377.99 98.53L377.99 105M392.64 105.17Q390.41 105.17 388.75 104.29Q387.09 103.40 386.18 101.86Q385.26 100.33 385.26 98.33Q385.26 96.33 386.15 94.79Q387.04 93.25 388.60 92.38Q390.16 91.50 392.16 91.50Q394.11 91.50 395.64 92.35Q397.16 93.20 398.04 94.76Q398.91 96.33 398.91 98.40Q398.91 98.60 398.90 98.85Q398.89 99.10 398.86 99.33L388.39 99.33Q388.66 100.78 389.81 101.65Q390.96 102.53 392.71 102.53Q394.94 102.53 396.34 101.08L398.01 103Q396.16 105.17 392.64 105.17M388.36 97.25L395.94 97.25Q395.74 95.80 394.71 94.90Q393.69 94 392.16 94Q390.64 94 389.61 94.89Q388.59 95.78 388.36 97.25M406.04 105L402.91 105L402.91 91.65L405.89 91.65L405.89 93.33Q406.64 92.42 407.76 91.96Q408.89 91.50 410.26 91.50Q411.71 91.50 412.89 92.05Q414.06 92.60 414.76 93.75Q415.56 92.70 416.86 92.10Q418.16 91.50 419.76 91.50Q422.19 91.50 423.71 92.92Q425.24 94.35 425.24 97.35L425.24 105L422.11 105L422.11 97.75Q422.11 95.97 421.32 95.10Q420.54 94.22 419.11 94.22Q417.56 94.22 416.60 95.22Q415.64 96.22 415.64 98.22L415.64 105L412.51 105L412.51 97.75Q412.51 95.97 411.73 95.10Q410.94 94.22 409.51 94.22Q407.96 94.22 407 95.22Q406.04 96.22 406.04 98.22L406.04 105Z"/>
+        <text x="400" y="127" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="11"
+              fill="#1ad1cb" opacity="0.8">Sass functions and mixins to use rem units</text>
+
+        <!-- code mockup: convert px to rem -->
+        <rect x="130" y="152" width="540" height="168" rx="10" fill="#0c141d" stroke="#243341"/>
+        <rect x="130" y="152" width="540" height="28" rx="10" fill="#16212c"/>
+        <rect x="130" y="170" width="540" height="10" fill="#16212c"/>
+        <line x1="130" y1="180" x2="670" y2="180" stroke="#243341" stroke-width="0.75"/>
+        <circle cx="152" cy="166" r="4.5" fill="#ff5f57"/>
+        <circle cx="168" cy="166" r="4.5" fill="#febc2e"/>
+        <circle cx="184" cy="166" r="4.5" fill="#28c840"/>
+
+        <g font-family="ui-monospace,Menlo,monospace" font-size="13">
+            <text x="150" y="212">
+                <tspan fill="#1ad1cb">@use </tspan><tspan fill="#7fd88f">"@unsass/rem"</tspan><tspan fill="#c8d0d4">;</tspan>
+            </text>
+            <text x="150" y="254">
+                <tspan fill="#c8d0d4">.foo {</tspan>
+            </text>
+            <text x="174" y="276">
+                <tspan fill="#c8d0d4">font-size: rem.convert(</tspan><tspan fill="#e0a973">16px</tspan><tspan fill="#c8d0d4">);</tspan>
+            </text>
+            <text x="150" y="298"><tspan fill="#c8d0d4">}</tspan></text>
+        </g>
+    </g>
+
+    <!-- crisp rounded border drawn on top, aligned with the clipped fill -->
+    <rect x="0.5" y="0.5" width="799" height="359" rx="11.5" fill="none" stroke="#2a3a47"/>
+</svg>
