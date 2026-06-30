@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file. See [Conven
 
 ## [2.5.0](https://github.com/unsass/rem/compare/v2.4.0...v2.5.0) (2026-06-30)
 
+
+### Dependencies
+
+* build(deps): move `sass` from dependencies to peer/dev ([c3eaccd](https://github.com/unsass/rem/commit/c3eaccd))
+
 ## [2.4.0](https://github.com/unsass/rem/compare/v2.3.0...v2.4.0) (2026-01-04)
 
 
